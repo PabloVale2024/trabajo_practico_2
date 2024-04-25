@@ -4,6 +4,34 @@ public class Producto {
 	private String codigo;
 	private String descripcion;
 	private double precioUnitario;
+	private OrigenFabricacion origen;
+	private Categoria categoria;
+	
+	public OrigenFabricacion getOrigen() {
+		return origen;
+	}
+	public void setOrigen(OrigenFabricacion origen) {
+		this.origen = origen;
+	}
+	public Categoria getCategoria() {
+		return categoria;
+	}
+	public void setCategoria(Categoria categoria) {
+		this.categoria = categoria;
+	}
+	public Producto() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Producto(String codigo, String descripcion, double precioUnitario, OrigenFabricacion origen,
+			Categoria categoria) {
+		super();
+		this.codigo = codigo;
+		this.descripcion = descripcion;
+		this.precioUnitario = precioUnitario;
+		this.origen = origen;
+		this.categoria = categoria;
+	}
 	public Producto(String codigo, String descripcion, double precioUnitario) {
 		super();
 		this.codigo = codigo;
@@ -29,5 +57,17 @@ public class Producto {
 		this.precioUnitario = precioUnitario;
 	}
 	
-
+	public enum OrigenFabricacion{
+		ARGENTINA, CHINA,BRASIL, URUGUAY
+	}
+	public enum Categoria{
+		TELOFONIA,ELECTROHOGAR,INFORMATICA, HERRAMIENTAS
+		
+	}
+	@Override
+	public String toString() {
+		return "Producto [codigo=" + codigo + ", descripcion=" + descripcion + ", precioUnitario=" + precioUnitario
+				+ ", origen=" + origen + ", categoria=" + categoria + "]/n";
+	}
+	
 }

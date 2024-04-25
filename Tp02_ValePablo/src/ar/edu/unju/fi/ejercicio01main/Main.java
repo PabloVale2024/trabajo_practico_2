@@ -19,6 +19,13 @@ public class Main {
 		prod02.setPrecioUnitario(3456);
 		prod02.setOrigen(OrigenFabricacion.BRASIL);
 		prod02.setCategoria(Categoria.HERRAMIENTAS);
+		Producto prod03=new Producto();
+		prod03.setCodigo("02");
+		prod03.setDescripcion("dulce32");
+		prod03.setPrecioUnitario(3456);
+		prod03.setOrigen(OrigenFabricacion.BRASIL);
+		prod03.setCategoria(Categoria.HERRAMIENTAS);
+		
 		
 		productos.add(prod01);
 		productos.add(prod02);

@@ -6,7 +6,25 @@ public class Producto {
 	private double precioUnitario;
 	private OrigenFabricacion origen;
 	private Categoria categoria;
+	private boolean disponible;
 	
+	
+	public Producto(String codigo, String descripcion, double precioUnitario, OrigenFabricacion origen,
+			Categoria categoria, boolean disponible) {
+		super();
+		this.codigo = codigo;
+		this.descripcion = descripcion;
+		this.precioUnitario = precioUnitario;
+		this.origen = origen;
+		this.categoria = categoria;
+		this.disponible = disponible;
+	}
+	public boolean isDisponible() {
+		return disponible;
+	}
+	public void setDisponible(boolean disponible) {
+		this.disponible = disponible;
+	}
 	public OrigenFabricacion getOrigen() {
 		return origen;
 	}
@@ -67,7 +85,7 @@ public class Producto {
 	@Override
 	public String toString() {
 		return "Producto [codigo=" + codigo + ", descripcion=" + descripcion + ", precioUnitario=" + precioUnitario
-				+ ", origen=" + origen + ", categoria=" + categoria + "]/n";
+				+ ", origen=" + origen + ", categoria=" + categoria + "]\n";
 	}
 	
 }

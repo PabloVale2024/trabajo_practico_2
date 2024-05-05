@@ -7,6 +7,7 @@ private String codigo;
 private Mes mes;
 private int dia;
 private String detalle;
+
 public Efemeride() {
 	super();
 	// TODO Auto-generated constructor stub
@@ -42,6 +43,12 @@ public String getDetalle() {
 public void setDetalle(String detalle) {
 	this.detalle = detalle;
 }
+@Override
+public String toString() {
+	return "Efemeride [codigo=" + codigo + ", mes=" + mes + ", dia=" + dia + ", detalle=" + detalle + "]";
+}
+
+
 
 
 }

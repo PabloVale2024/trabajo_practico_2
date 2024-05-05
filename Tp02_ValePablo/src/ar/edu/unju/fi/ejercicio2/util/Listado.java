@@ -7,5 +7,5 @@ import ar.edu.unju.fi.ejercicio02.model.Efemeride;
 
 public class Listado {
 	public static List<Efemeride> listadoEfemerides =new ArrayList<Efemeride>();
-
+	
 }

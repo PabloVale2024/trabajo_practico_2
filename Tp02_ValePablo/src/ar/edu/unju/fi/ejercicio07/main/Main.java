@@ -108,7 +108,7 @@ public class Main {
 			break;
 						}
             }catch (Exception e) {
-            	System.out.println("opcion INCORRECTA");
+            	System.out.println("opcion INCORRECTA intente de nuevo");
             }
 				// TODO: handle exception
 			}while (opcion !=7);
